@@ -11,13 +11,14 @@ body {
     color: #777777;
 }
 
-.dark-mode, 
-.dark-mode header{
+.dark-mode,
+.dark-mode header {
     background-color: #3e3e3e;
     color: #fff;
 }
+
 .dark-mode section.projects article {
- background-color: #949494;
+    background-color: #949494;
 }
 
 .container {
@@ -38,7 +39,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 10;
+    z-index: 9;
     width: 100%;
     background-color: #fff;
 }
@@ -66,7 +67,7 @@ header .logo h2 {
 
 header .btn-menu button.btn-toggle-mode {
     font-size: 12px;
-    padding: 10px;
+    padding: 5px;
 }
 
 header .btn-menu button {
@@ -76,6 +77,7 @@ header .btn-menu button {
     color: #777777;
     cursor: pointer;
     outline: none;
+    vertical-align: center;
 }
 
 header .btn-menu button:hover {
@@ -160,9 +162,71 @@ section.projects article .info .tag.tag-orange {
     background-color: #DC9730;
 }
 
-section.styles h2 {}
+section.styles article {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+    border-radius: 10px;
+}
 
-section.styles article h3 {}
+
+section.styles h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+section.styles article h3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin: 0;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #333333;
+}
+
+.modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 10;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.modal .modal-content {
+    background-color: #fff;
+    width: 500px;
+    padding: 20px;
+}
+
+.modal .modal-content .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 @media (max-width: 1010px) {
     section.projects .container {

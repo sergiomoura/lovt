@@ -5,8 +5,8 @@
 
 //let adulto = confirm('Você tem mais de 18 anos?'); // retorna booleano
 
-let nomeUsuario = prompt('Qual seu nome?'); // retorna texto inserido pelo usuario
-console.log(nomeUsuario);
+//let nomeUsuario = prompt('Qual seu nome?'); // retorna texto inserido pelo usuario
+let nomeUsuario = 'Hendy'; 
 
 let elementHeader = document.querySelector('.olaUsuario'); // seleciona o elemento html
 console.log(elementHeader);
@@ -22,4 +22,12 @@ logo.style.color = "orange";
 
 const toggleMode = () => {
     document.body.classList.toggle("dark-mode");
+}
+
+setTimeout(() => {
+    document.querySelector('.modal').style.display = "flex";
+}, 5000)
+
+const btnClose = () => {
+    document.querySelector('.modal').style.display = "none";
 }
