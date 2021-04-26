@@ -9,7 +9,15 @@ body {
     margin: 0;
     font-family: 'Ropa Sans', sans-serif;
     color: #777777;
+}
 
+.dark-mode, 
+.dark-mode header{
+    background-color: #3e3e3e;
+    color: #fff;
+}
+.dark-mode section.projects article {
+ background-color: #949494;
 }
 
 .container {
@@ -54,6 +62,11 @@ header .logo h1 {
 header .logo h2 {
     font-size: 18px;
     font-weight: normal;
+}
+
+header .btn-menu button.btn-toggle-mode {
+    font-size: 12px;
+    padding: 10px;
 }
 
 header .btn-menu button {

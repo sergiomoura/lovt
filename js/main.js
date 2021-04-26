@@ -12,7 +12,6 @@ let elementHeader = document.querySelector('.olaUsuario'); // seleciona o elemen
 console.log(elementHeader);
 
 //elementHeader.innerText = `Olá, ${nomeUsuario}`; // atribui conteudo ao elemento selecionado
-
 elementHeader.innerHTML += `<strong>Olá, ${nomeUsuario}</strong>`;
 
 
@@ -20,3 +19,7 @@ let logo = document.getElementById('logo');
 console.log(logo);
 
 logo.style.color = "orange";
+
+const toggleMode = () => {
+    document.body.classList.toggle("dark-mode");
+}
