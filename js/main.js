@@ -33,16 +33,25 @@ const btnClose = () => {
 }
 
 
-document.querySelector("#btn-submit-contact").addEventListener("click", (evento) => {
-    evento.preventDefault(); // cancelando o envio temporariamente
+// document.querySelector("#btn-submit-contact").addEventListener("click", (evento) => {
+//     evento.preventDefault(); // cancelando o envio temporariamente
 
-    let nomeValue = document.querySelector("#input_nome").value;
-    let emailValue = document.querySelector("#input_email").value;
+//     let nomeValue = document.querySelector("#input_nome").value;
+//     let emailValue = document.querySelector("#input_email").value;
 
-    console.log(nomeValue);
-    console.log(emailValue);
-    //validação dos campos
-    //exibição de mensagem de erros
-    //envio do formulário
+//     console.log(nomeValue);
+//     console.log(emailValue);
+// });
+
+let formContact = document.querySelector("#form_contact");
+
+formContact.addEventListener("submit", (evento) => {
+    // interrompo o envio do formulário
+    evento.preventDefault();
+
+    // validar se todos os campos estão preenchido
+    // validar se nome tem 2 ou mais caracteres
+    // validar se telefone tem no minimo 8 caracteres
+    // validar se o campo email tem @ (Google - validação email com regex)
 
 });
