@@ -32,3 +32,17 @@ const btnClose = () => {
     document.querySelector('.modal').style.display = "none";
 }
 
+
+document.querySelector("#btn-submit-contact").addEventListener("click", (evento) => {
+    evento.preventDefault(); // cancelando o envio temporariamente
+
+    let nomeValue = document.querySelector("#input_nome").value;
+    let emailValue = document.querySelector("#input_email").value;
+
+    console.log(nomeValue);
+    console.log(emailValue);
+    //validação dos campos
+    //exibição de mensagem de erros
+    //envio do formulário
+
+});
