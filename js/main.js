@@ -31,3 +31,4 @@ setTimeout(() => {
 const btnClose = () => {
     document.querySelector('.modal').style.display = "none";
 }
+
