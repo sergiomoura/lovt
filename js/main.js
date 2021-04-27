@@ -59,6 +59,7 @@ formContact.addEventListener("submit", (evento) => {
     let mensagemValue = document.querySelector("#input_mensagem").value;
     let divMensagemErro = document.querySelector(".mensagem-erro");
 
+    let listErros = [];
 
     if (nomeValue.length < 2 || emailValue.length < 1 || telefoneValue.length < 1 || mensagemValue.length < 1) {
         divMensagemErro.innerHTML = "Preencha todos campos. <br>";
