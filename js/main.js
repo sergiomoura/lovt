@@ -59,14 +59,16 @@ formContact.addEventListener("submit", (evento) => {
     let mensagemValue = document.querySelector("#input_mensagem").value;
     let divMensagemErro = document.querySelector(".mensagem-erro");
 
+
     if (nomeValue.length < 2 || emailValue.length < 1 || telefoneValue.length < 1 || mensagemValue.length < 1) {
-        divMensagemErro.innerHTML += "Preencha todos campos. <br>";
+        divMensagemErro.innerHTML = "Preencha todos campos. <br>";
+    } else if (telefoneValue.length < 8) {
+        divMensagemErro.innerHTML = "Telefone deve ter pelo menos 8 digitos. <br>";
+    } else if (emailValue.indexOf("@") < 0) {
+        divMensagemErro.innerHTML = "Insira um email válido. <br>";
+    } else {
+        formContact.submit();
     }
-
-    if (telefoneValue.length < 8) {
-        divMensagemErro.innerHTML += "Telefone deve ter pelo menos 8 digitos. <br>";
-    }
-
 
 
 
