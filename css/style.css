@@ -237,6 +237,12 @@ form button {
     font-size: 20px;
 }
 
+.mensagem-erro {
+    background-color: #f76262;
+    color: #fff;
+    text-align: center;
+}
+
 .modal {
     position: fixed;
     width: 100%;

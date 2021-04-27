@@ -53,5 +53,21 @@ formContact.addEventListener("submit", (evento) => {
     // validar se nome tem 2 ou mais caracteres
     // validar se telefone tem no minimo 8 caracteres
     // validar se o campo email tem @ (Google - validação email com regex)
+    let nomeValue = document.querySelector("#input_nome").value;
+    let emailValue = document.querySelector("#input_email").value;
+    let telefoneValue = document.querySelector("#input_telefone").value;
+    let mensagemValue = document.querySelector("#input_mensagem").value;
+    let divMensagemErro = document.querySelector(".mensagem-erro");
+
+    if (nomeValue.length < 2 || emailValue.length < 1 || telefoneValue.length < 1 || mensagemValue.length < 1) {
+        divMensagemErro.innerHTML += "Preencha todos campos. <br>";
+    }
+
+    if (telefoneValue.length < 8) {
+        divMensagemErro.innerHTML += "Telefone deve ter pelo menos 8 digitos. <br>";
+    }
+
+
+
 
 });
