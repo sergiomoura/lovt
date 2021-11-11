@@ -36,7 +36,7 @@ header {
 header .container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
 }
 
 header .logo {
@@ -54,12 +54,37 @@ header .logo h2 {
     font-weight: normal;
 }
 
-header .btn-menu button.btn-toggle-mode {
-    font-size: 12px;
-    padding: 5px;
+header nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 100%;
+    display: flex;
 }
 
-header .btn-menu button {
+header nav ul li {
+    height: 100%;
+}
+
+header nav ul li a {
+    display: inline-block;
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    color: inherit;
+}
+
+header nav ul li a:hover{
+    background-color: #777777;
+    color: #FFF;
+}
+
+header button {
+    display: none;
+    font-size: 12px;
+    padding: 5px;
     background-color: transparent;
     border: none;
     font-size: 30px;
@@ -69,7 +94,7 @@ header .btn-menu button {
     vertical-align: center;
 }
 
-header .btn-menu button:hover {
+header button:hover {
     transition: 0.3s;
     color: #DC9730;
 }
@@ -235,6 +260,6 @@ footer .container .map{
     margin-right: 20px;
 }
 
-footer .container p{
-
+footer .container a{
+    color: #FFF
 }
