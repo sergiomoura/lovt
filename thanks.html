@@ -9,7 +9,24 @@
 </head>
 
 <body>
-    <h1>Formulário enviado!</h1>
+    <h1 class="borda-azul">Formulário enviado!</h1>
+    
+    <div id="notificacoes" class="borda-azul">
+
+    </div>
+
+    <script>
+        document.getElementById("notificacoes").innerHTML = "Mais uma nota!"
+    </script>
+    <style>
+        #notificacoes {
+            background-color: yellow;
+        }
+
+        .borda-azul{
+            border: 2px solid blue;
+        }
+    </style>
 </body>
 
 </html>
