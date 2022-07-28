@@ -19,9 +19,17 @@
             <img src="./img/hamburguer.svg" alt="menu">
 
         </div>
+        <% if(logado){ %>
+
+            <div>Bem vindo! Fulano</div>
+
+        <% } %>
+
     </header>
     
     <main>
+        <h1><%= produto.nome%></h1>
+        <h2><%= produto.preco%></h2>
         
         <img src="./img/slide-1.png" alt="Ambiente claro e mobiliado">
 
